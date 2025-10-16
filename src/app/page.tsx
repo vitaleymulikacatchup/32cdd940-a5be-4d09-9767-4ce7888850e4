@@ -1,4 +1,4 @@
-use client";
+"use client";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import HeroBillboard from '@/components/sections/hero/HeroBillboard';
@@ -25,17 +25,15 @@ export default function Page() {
       borderRadius="rounded"
     >
       <div id="nav" data-section="nav" className="scroll-mt-24">
-        <div className="mx-auto px-4 md:px-6">
-          <NavbarLayoutFloatingInline
-            navItems={[
-              { name: "Features", id: "features" },
-              { name: "Pricing", id: "pricing" },
-              { name: "About", id: "about" },
-              { name: "Contact", id: "contact" }
-            ]}
-            brandName="Webild"
-          />
-        </div>
+        <NavbarLayoutFloatingInline
+          navItems={[
+            { name: "Features", id: "features" },
+            { name: "Pricing", id: "pricing" },
+            { name: "About", id: "about" },
+            { name: "Contact", id: "contact" }
+          ]}
+          brandName="Webild"
+        />
       </div>
       <div id="hero" data-section="hero" className="scroll-mt-24">
         <div className="mx-auto px-4 md:px-6">
